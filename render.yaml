@@ -1,0 +1,13 @@
+# Render Blueprint for the receipt OCR server.
+# Deploy path B (see README.md): Dashboard -> New -> Blueprint, point it
+# at the GitHub repo containing online-server/, and Render creates this
+# service from this file. No environment variables are needed — Render
+# sets PORT itself and the server listens on it.
+services:
+  - type: web
+    name: business-software-ocr
+    runtime: docker
+    region: singapore
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health

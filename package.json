@@ -1,0 +1,1 @@
+{"description":"Receipt-photo OCR server for the Business Software demo APK (Scan Receipt). Server-side Tesseract, no API keys.","engines":{"node":">=18"},"main":"server.js","name":"business-software-ocr","private":true,"scripts":{"start":"node server.js"},"version":"1.0.0"}
